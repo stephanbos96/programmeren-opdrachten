@@ -10,7 +10,7 @@ def inlezen_eindstation(allstations, beginstation):
     while True:
         station = input('eindstation')
         if station in allstations:
-            index_begin_station = allstations.index(station)
+            index_eind_station = allstations.index(station)
             if index_eind_station > index_begin_station:
                 return station
 
@@ -32,6 +32,6 @@ def omroepen_reis(allstations, beginstation, eindstation):
             print(' -' + stations[index])
 
 stations = ['schagen','heerhugowaard','alkmaar','castricum','zaandam','amsterdam sloterdijk','amsterdam centraal','amsterdam amstel','utrecht centraal','\'s-hertogenbosch','eindhoven','weert','roermond','sittard','maastricht']
-beginstation = inlezen_beginstation()
-eindstation = inlezen_eindstation()
-omroepen_reis()
+beginstation = inlezen_beginstation(stations)
+eindstation = inlezen_eindstation(stations, beginstation)
+omroepen_reis(stations, beginstation, eindstation)
