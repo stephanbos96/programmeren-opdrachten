@@ -47,7 +47,7 @@ def kluis_bewerken(actie):
     for regel in regels:
         lijst = regel.split(';')
         kn = int(lijst[0].strip())
-        kc = lijst[1]
+        kc = lijst[1].strip()
         if kn == kluisnummer and kc == kluiscode:
             print('Kluisnummer {} gaan we {}'.format(str(kluisnummer), actie))
             gevonden = True
@@ -84,7 +84,7 @@ while True:
         kluis_openen()
 
     elif keuze == 4:
-        kluis_openen()
+        kluis_teruggeven()
 
     elif keuze == 5:
         break

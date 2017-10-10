@@ -3,7 +3,7 @@ def standaardprijs(afstandKM):
         prijs = 0.80*eval(afstandKM)
 
     elif eval(afstandKM) >= 50:
-        prijs = 15 + (eval(afstandKM)-50) * 0.6
+        prijs = 15 + (eval(afstandKM)) * 0.6
 
     return prijs
 
@@ -28,8 +28,9 @@ weekendrit = input('vindt u reis plaats in het weekend: ')
 leeftijd = input('wat is uw leeftijd: ')
 prijs = standaardprijs(afstandKM)
 
-print ('________________________________')
+print('________________________________')
 
-print (ritprijs(leeftijd, weekendrit, prijs))
+print(ritprijs(leeftijd, weekendrit, prijs))
+
 
 
