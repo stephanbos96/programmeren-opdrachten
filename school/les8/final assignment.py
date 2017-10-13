@@ -28,10 +28,13 @@ def omroepen_reis(allstations, beginstation, eindstation):
     afstand = index_eind - index_begin
     print('\nDe afstand is {} station(s)'.format(str(afstand)))
     if afstand > 1:
-        for index in range(index_begin + 1, index_eind):
+        for index in range(index_begin + 0, index_eind):
             print('-' + stations[index])
 
 stations = ['schagen','heerhugowaard','alkmaar','castricum','zaandam','amsterdam sloterdijk','amsterdam centraal','amsterdam amstel','utrecht centraal','\'s-hertogenbosch','eindhoven','weert','roermond','sittard','maastricht']
 beginstation = inlezen_beginstation(stations)
 eindstation = inlezen_eindstation(stations, beginstation)
 omroepen_reis(stations, beginstation, eindstation)
+
+
+

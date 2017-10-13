@@ -1,5 +1,5 @@
                 #geordend       #muteerbaar         #iterable       #dubbele waarden toegestaan
-#tupleq
+#tuple
 #dictionary
 #set
 #list
