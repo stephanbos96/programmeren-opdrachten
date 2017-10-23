@@ -11,7 +11,7 @@ def kosten(prijs):
     except ZeroDivisionError:
         print('Delen door 0 kan niet')
     except NameError:
-        print('Gebruik cijfers in plaats van getallen')
+        print('Gebruik cijfers in plaats van letters')
     except:
         print('Error')
 

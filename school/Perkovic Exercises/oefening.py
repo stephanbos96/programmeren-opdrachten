@@ -1,4 +1,3 @@
-for name in ['kees','lies']:
-    print(name, sep='! ')
+lijst = ['kees',[2,2]]
 
-
+print(type(lijst[1]))
