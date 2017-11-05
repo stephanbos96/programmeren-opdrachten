@@ -1,9 +1,7 @@
-leeftijd= input('geef je leeftijd: ')
-nationaliteit= input('nederlands paspoort: ')
+age = eval(input("Geef je leeftijd: "))
+passport = input("Nederlands paspoort: ")
 
-if eval(leeftijd) >= 18 and nationaliteit == 'ja':
-    print ('Gefeliciteerd!, je mag stemmen')
-else: #onderdeel van opdracht 3.3
-
-    print ('helaas, je mag niet stemmen')
-
+if age >= 18 and (passport == "Ja" or passport == "ja" or passport == "yes" or passport == "Yes"):
+    print("Gefeliciteerd, je mag stemmen!")
+else:
+    print("Helaas je mag niet stemmen :(")

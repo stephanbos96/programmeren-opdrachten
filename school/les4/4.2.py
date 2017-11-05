@@ -4,4 +4,4 @@ def som(getallenlijst):
 
 getallenlijst = [1,2,3,4,5,6,7]
 
-print (som(getallenlijst))
+print(som(getallenlijst))
